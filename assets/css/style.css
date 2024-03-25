@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+
+    overflow-x: hidden;
+}
+@font-face {
+    font-family:prgg;
+    src: url(../font/lexend-reg.ttf);
+}
+@font-face {
+    font-family:grob;
+    src: url(../font/GROBOLD.ttf);
+}
+/* ----------------------bgggggggg----------------- */
+.bg{
+    
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    
+
+}
+.bg .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 50vw;
+    padding-top: 2vw;
+    
+}
+.left-icn{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    
+
+}
+.left-icn a img{
+    width:5vw;
+    transition: .5s;
+}
+.left-icn a img:hover{
+    transform: translateY(-.5vw);
+}
+.right-icn{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+
+}
+.left-icn a img{
+    width:5vw;
+    transition: .5s;
+}
+.right-icn a img{
+    width:5vw;
+    transition: .5s;
+}
+.right-icn a img:hover{
+    transform: translateY(-.3vw);
+}
+
+
+.text{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0VW;
+    padding-left: 9VW;
+    position: relative;
+}
+.text .upr .up {
+    width: 45vw;
+
+}
+.text  .agn img{
+    width: 54vw;
+    transform: translateY(-11Svw);
+    margin-left:-5VW;
+
+    
+
+}
+.text .uprrr .btn{
+    width: 14vw;
+    border: none;
+    background-color:#ffe55c;
+    border: .4vw solid #dc4d3b;
+    font-family:grob;
+    font-size: 1.6vw;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    position: absolute;
+    top: 67%;
+    left: 24%;
+    transform: rotate(-10deg);
+    transition: .4s;
+    cursor: pointer;
+    
+
+}
+.text .uprrr .btn:hover{
+    background-color: aliceblue;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+    padding: 3vw 1vw;
+    margin: auto;
+    background-color: #fb568a;
+    border-radius: 2vw;
+    margin-top: 37vw;
+    gap: 2vw;
+    border: 2px solid #fb568a;
+}
+.clm  {
+    background: linear-gradient(to bottom,  #fcece2 30%,#ecbd94 100%);
+    width: 30%;
+    text-align: center;
+    padding: 2.6vw 1vw;
+    border-radius: 1vw;
+    border: 2px solid #ecbd94;
+}
+.clm h2{
+    font-size: 2vw;
+    font-family:grob;
+    animation: flipInY 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+    
+}
+#bb{
+    width: 30%;
+}
+#bb h2{
+    font-size: 1.9vw;
+    font-family:grob;
+    animation: flipInY 2S cubic-bezier(0.165, 0.84, 0.44, 1)  infinite alternate;
+}
+/* -----------------------------------media qry------------------- */
+@media (max-width:600px) {
+    .text .upr .up {
+        width: 67vw;
+    
+    }
+    .text  .agn img{
+        width: 65vw;
+        transform: translateY(-15vw);
+        margin-left:-5VW;
+    
+        
+    
+    }
+    .text{
+        padding-left: 2vw;
+    }
+    .text .uprrr .btn{
+        width: 18vw;
+        border: none;
+        background-color:#ffe55c;
+        border: .4vw solid #dc4d3b;
+        font-family:grob;
+        font-size: 2.3vw;
+        border-radius: 1.5vw;
+        padding: 1.5vw;
+        position: absolute;
+        top: 67%;
+        left: 24%;
+        transform: rotate(-10deg);
+        transition: .4s;
+        cursor: pointer;
+        
+    
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 4vw 2vw;
+        margin: auto;
+        background-color: #fb568a;
+        border-radius: 1.8vw;
+        margin-top: 17vw;
+        gap: 2vw;
+        border: 2px solid #fb568a;
+        
+        
+    }
+    .clm  {
+        background: linear-gradient(to bottom,  #fcece2 30%,#ecbd94 100%);
+        width: 33%;
+        text-align: center;
+        padding: 4vw 1vw;
+        border-radius: 1vw;
+        border: 1.5px solid #ecbd94;
+    }
+    .clm h2{
+        font-size: 2.6vw;
+    }
+    #bb h2{
+        font-size: 2.6vw;
+    }
+    #bb{
+        width: 33%;
+    }
+    .left-icn a img{
+        width:5.5vw;
+        transition: .5s;
+    }
+    .right-icn a img{
+        width:5.5vw;
+        transition: .5s;
+    }
+
+    
+}
